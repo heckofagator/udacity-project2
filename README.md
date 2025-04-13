@@ -77,6 +77,11 @@ and running a ML prediction from Cloudshell should look something like this:
 
 ![image](https://github.com/user-attachments/assets/9cf9ae27-bed4-4e9b-81d7-5523da6a88b4)
 
+and here's a look at the associated logs from the prediction
+
+![image](https://github.com/user-attachments/assets/6102c2bd-6a84-41cb-9cf9-2d05d5690b91)
+
+
 
 Once new code is committed to Github, it's time for the Continuous Delivery part of the process, Azure Pipelines
 
