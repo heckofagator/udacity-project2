@@ -1,6 +1,6 @@
 [![CI](https://github.com/heckofagator/udacity-project2/actions/workflows/main.yml/badge.svg)](https://github.com/heckofagator/udacity-project2/actions/workflows/main.yml)
 
-# Overview
+# Overview.
 
 <TODO: complete this with an overview of your project>
 
