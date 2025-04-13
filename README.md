@@ -2,18 +2,21 @@
 
 # Overview.
 
-This project will develop and end-to-end Continuous Integration/Continuous Delivery (CI/CD) system, using the Flask web framework.  It will deploy a 
-Machine Learning Microservice API via Azure Python Webapps.
+This project will develop and end-to-end Continuous Integration/Continuous Delivery (CI/CD) system using the Flask web framework.  It will deploy a 
+Machine Learning Microservice API via Azure Python Webapps following Agile Development best practices.
 
 ## Project Plan
 
-The following tools were use to help the project management, development, testing, ops and executive teams plan and implement this project.
+The following tools were use to help the project management, development, testing, ops and executive teams plan, test and implement this project.
+
+Project Plan
+https://www.dropbox.com/scl/fi/tbjuvagyaa7lq5k4je7ep/project-management-udacity.xlsx?rlkey=u0xd2h4ttmzn543kdl810f6dw&dl=0
 
 Trello Board
 https://trello.com/invite/b/67fc02c417f3b774e60afb13/ATTI974834dcc2bc2e07b13a88c5a2c347999C2282E2/udacity-project
 
-Project Plan
-https://www.dropbox.com/scl/fi/tbjuvagyaa7lq5k4je7ep/project-management-udacity.xlsx?rlkey=u0xd2h4ttmzn543kdl810f6dw&dl=0
+![image](https://github.com/user-attachments/assets/867c5ceb-df84-4c45-aaf7-687712635019)
+
 
 ## Instructions
 
@@ -21,7 +24,8 @@ https://www.dropbox.com/scl/fi/tbjuvagyaa7lq5k4je7ep/project-management-udacity.
 
   ![image](https://github.com/user-attachments/assets/72f7dc31-c31c-4181-8bec-6824598de046)
 
-An overview of this project's architecture is picture above.  We will use Github for our source control, Github Actions to continuously test and integrate the code, Azure Pipelines will pick up those code changes and then deploy the updated WebApp's source code into production.
+An overview of this project's architecture is pictured above.  We will use Github for our source control, Github Actions to continuously test and integrate the code, Azure Pipelines will pick up those code changes and then deploy the updated WebApp's source code into production.
+
 
 * Instructions for running the Python project.
 
@@ -29,13 +33,13 @@ Source Control for this project is handled via the following Github Repository
 
 ![image](https://github.com/user-attachments/assets/0850b232-6136-4818-b75a-6e39d3c0555f)
 
-Any changes made to any of the files here will automatically kick off our GitHub Actions job, which refreshes the Python environment, runs syntax and other tests that check for any errors, before the code is pushed to production.
+Any changes made to any of the files here will automatically kick off our GitHub Actions job, which refreshes the Python environment (according to our requirements.txt file) and runs syntax and other tests that check for any errors, before the code is pushed to production.
 
 A successfull Github Actions test for this project looks like this:
 
 ![image](https://github.com/user-attachments/assets/afc09ac1-7006-4ae1-a6b5-8ba0e433d2ac)
 
-and a badge is displayed at the top of the project's README file to show everyone all checks and test are passing.
+and a badge is displayed at the top of the project's README file to show everyone all checks and tests are passing.
 
 ![image](https://github.com/user-attachments/assets/cb72351b-0ca1-45c7-b9c4-32342639bd51)
 
@@ -54,19 +58,24 @@ Azure Cloud Shell too.
 We have provided a simple shell script called 'commands.sh' which can help you start up the Azure Webapp and
 stream its logs.  Usage is as follows:
 
->commands.sh up  # this starts the webapp
->commands.sh logs  # this views the logs
+commands.sh up  # this starts the webapp
+
+commands.sh logs  # this views the logs
 
 ![image](https://github.com/user-attachments/assets/15eafd55-d9ca-4202-873b-15d6105a904b)
 
-and here you can see the running Azure Webapp and some streamed logs
+and here you can see the running Azure Webapp, some streamed logs and the Webapp, as seen from the Azure Portal.
 
 ![image](https://github.com/user-attachments/assets/d07b01f2-298d-4c5d-acf7-3c2e27bcb124)
 
 ![image](https://github.com/user-attachments/assets/ea69431c-dfed-47ee-80e2-7c9fb5be301c)
 
+![image](https://github.com/user-attachments/assets/ec68e45d-fd95-448c-a922-bdf749e4e594)
 
-and running a ML prediction from Cloudshell looks like this:
+
+and running a ML prediction from Cloudshell should look something like this:
+
+![image](https://github.com/user-attachments/assets/9cf9ae27-bed4-4e9b-81d7-5523da6a88b4)
 
 
 Once new code is committed to Github, it's time for the Continuous Delivery part of the process, Azure Pipelines
@@ -81,33 +90,13 @@ and outlined below are the various stages setup in the pipeline with green check
 
 
 
-* How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
-
-
-* Passing tests that are displayed after running the `make all` command from the `Makefile`
-
-* Output of a test run
-
-* Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
-
-* Running Azure App Service from Azure Pipelines automatic deployment
-
-* Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
-The output should look similar to this:
-
-```bash
-udacity@Azure:~$ ./make_predict_azure_app.sh
-Port: 443
-{"prediction":[20.35373177134412]}
-```
-
-* Output of streamed log files from deployed application
-
-> 
-
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
+Some possible future enhancement ideas:
+
+Offer housing cost predictions for other markets other than Boston
+
+add a GUI interface to the prediction tool
 
 ## Demo 
 
