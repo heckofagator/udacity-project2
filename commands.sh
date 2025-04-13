@@ -4,9 +4,9 @@
 set -e
 
 # Set your resource group and app name
-RESOURCE_GROUP="MyResourceGroup"
-APP_NAME="MyUniqueAppName"
-LOCATION="East US"
+RESOURCE_GROUP="aaronheck_rg_5484"
+APP_NAME="udacity-project"
+LOCATION="Canada Central"
 
 # Function to create and deploy web app
 deploy_app() {
