@@ -7,8 +7,11 @@
 ## Project Plan
 <TODO: Project Plan
 
-* A link to a Trello board for the project
-* A link to a spreadsheet that includes the original and final project plan>
+Trello Board
+https://trello.com/invite/b/67fc02c417f3b774e60afb13/ATTI974834dcc2bc2e07b13a88c5a2c347999C2282E2/udacity-project
+
+Project Plan
+https://www.dropbox.com/scl/fi/tbjuvagyaa7lq5k4je7ep/project-management-udacity.xlsx?rlkey=u0xd2h4ttmzn543kdl810f6dw&dl=0
 
 ## Instructions
 
