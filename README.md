@@ -2,10 +2,12 @@
 
 # Overview.
 
-<TODO: complete this with an overview of your project>
+This project will develop and end-to-end Continuous Integration/Continuous Delivery (CI/CD) system, using the Flask web framework.  It will deploy a 
+Machine Learning Microservice API via Azure Python Webapps.
 
 ## Project Plan
-<TODO: Project Plan
+
+The following tools were use to help the project management, development, testing, ops and executive teams plan and implement this project.
 
 Trello Board
 https://trello.com/invite/b/67fc02c417f3b774e60afb13/ATTI974834dcc2bc2e07b13a88c5a2c347999C2282E2/udacity-project
@@ -15,10 +17,13 @@ https://www.dropbox.com/scl/fi/tbjuvagyaa7lq5k4je7ep/project-management-udacity.
 
 ## Instructions
 
-<TODO:  
-* Architectural Diagram (Shows how key parts of the system work)>
+* Architectural Diagram
 
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
+  ![image](https://github.com/user-attachments/assets/72f7dc31-c31c-4181-8bec-6824598de046)
+
+An overview of this project's architecture is picture above.  We will use Github for our source control, Github Actions to continuously test and integrate the code, Azure Pipelines will pick up those code changes and then deploy the updated WebApp's source code into production.
+
+* Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
 * Project running on Azure App Service
 
