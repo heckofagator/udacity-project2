@@ -1,6 +1,6 @@
 [![CI](https://github.com/heckofagator/udacity-project2/actions/workflows/main.yml/badge.svg)](https://github.com/heckofagator/udacity-project2/actions/workflows/main.yml)
 
-# Overview..
+# Overview...
 
 This project will develop and end-to-end Continuous Integration/Continuous Delivery (CI/CD) system using the Flask web framework.  It will deploy a 
 Machine Learning Microservice API via Azure Python Webapps following Agile Development best practices.
